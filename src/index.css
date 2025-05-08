@@ -99,3 +99,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow:
+      0 0 10px rgba(155, 135, 245, 0.7),
+      0 0 20px rgba(155, 135, 245, 0.5);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 15px 2px rgba(155, 135, 245, 0.4);
+  }
+
+  .shadow-glow-subtle {
+    box-shadow: 0 0 15px 0px rgba(155, 135, 245, 0.15);
+  }
+
+  .shadow-glow-button {
+    box-shadow: 0 0 15px 0px rgba(155, 135, 245, 0.5);
+  }
+}
