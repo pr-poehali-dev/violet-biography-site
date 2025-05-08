@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
@@ -37,7 +36,7 @@ const Biography = () => {
     <div className="min-h-screen flex flex-col justify-between bg-[#0F0B1A] text-white">
       {/* Main Content */}
       <main className="flex-grow flex flex-col justify-center items-center px-4 py-12">
-        <div 
+        <div
           className={`max-w-3xl w-full transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
         >
           {/* Glowing Header */}
@@ -50,23 +49,27 @@ const Biography = () => {
 
           {/* Bio Section */}
           <div className="mb-16 backdrop-blur-sm bg-[#231A3B]/30 p-8 rounded-lg border border-[#9b87f5]/20 shadow-glow-subtle">
-            <h2 className="text-3xl font-bold mb-6 text-[#B69FFF]">Моя биография</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[#B69FFF]">
+              Моя биография
+            </h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              Здесь вы можете написать подробную информацию о себе,
-              своём опыте, образовании и достижениях. Это пространство
-              для того, чтобы рассказать свою уникальную историю,
-              поделиться своими ценностями и целями.
+              Здесь вы можете написать подробную информацию о себе, своём опыте,
+              образовании и достижениях. Это пространство для того, чтобы
+              рассказать свою уникальную историю, поделиться своими ценностями и
+              целями.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Можно рассказать о своём пути к нынешней деятельности,
-              ключевых моментах жизни, которые повлияли на ваше
-              формирование как личности и профессионала.
+              Можно рассказать о своём пути к нынешней деятельности, ключевых
+              моментах жизни, которые повлияли на ваше формирование как личности
+              и профессионала.
             </p>
           </div>
 
           {/* Social Links */}
           <div className="backdrop-blur-sm bg-[#231A3B]/30 p-8 rounded-lg border border-[#9b87f5]/20 shadow-glow-subtle mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-[#B69FFF]">Мои социальные сети</h2>
+            <h2 className="text-3xl font-bold mb-8 text-[#B69FFF]">
+              Мои социальные сети
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {socialLinks.map((link) => (
                 <a
@@ -85,19 +88,7 @@ const Biography = () => {
             </div>
           </div>
 
-          {/* Project Button */}
-          <div className="text-center">
-            <a
-              href="https://t.me/fsqgoat"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="bg-[#6E59A5] hover:bg-[#9b87f5] text-white px-8 py-6 rounded-md text-lg transition-all shadow-glow-button">
-                <Icon name="Rocket" className="mr-2" size={20} />
-                Мой проект
-              </Button>
-            </a>
-          </div>
+          {/* Project Button - Removed */}
         </div>
       </main>
 
